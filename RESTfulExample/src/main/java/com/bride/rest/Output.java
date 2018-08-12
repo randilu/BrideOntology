@@ -4,7 +4,15 @@ public class Output {
     private String subject;
     private String predicate;
     private String object;
+    private int index;
 
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
 
     public String getSubject() {
         return subject;
