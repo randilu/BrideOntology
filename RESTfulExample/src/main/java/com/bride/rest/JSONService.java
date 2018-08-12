@@ -166,7 +166,71 @@ public class JSONService {
     }
 
     @GET
-    @Path("/getAll/{name}")
+    @Path("/getFromCombination/{casteName}/{religion}/{race}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public ArrayList<Output> getFromCombination(
+            @PathParam("casteName") String casteName,
+            @PathParam("religion") String religion,
+            @PathParam("race") String race
+    ) {
+        ArrayList<Output> outputs = new ArrayList<Output>();
+        try {
+
+            URL url = getClass().getResource("/bride_08.owl");
+            File f = new File(url.getFile());
+            FileReader r = new FileReader(f);
+            OntModel m = ModelFactory.createOntologyModel();
+            m.read(r, null);
+            String append = "";
+            if(!casteName.equals("empty")){ append = "?bride bride:hasCaste bride:"+casteName+"."; }
+            if(!religion.equals("empty")){append = append+" ?bride bride:hasReligion bride:"+religion+".";}
+            if(!race.equals("empty")){append = append+" ?bride bride:hasRace bride:"+race+".";}
+            String queryString ="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                    "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  " +
+                    "PREFIX bride: <http://www.semanticweb.org/aeshana/ontologies/2018/7/Bride#>" +
+                    "select ?bride "
+                    +
+                    "where { "+append+" }";
+            System.out.println(queryString);
+            Query query = QueryFactory.create(queryString);
+            QueryExecution qexec = QueryExecutionFactory.create(query, m);
+            try {
+                ResultSetRewindable results = ResultSetFactory.makeRewindable(qexec.execSelect());
+
+                while (results.hasNext()) {
+                    QuerySolution binding = results.nextSolution();
+                    Output output = new Output();
+                    Resource resource = (Resource) binding.get("bride");
+                    output.setSubject(resource.getLocalName());
+                    System.out.println(resource.getLocalName());
+                    System.out.println("------------------------------");
+                    outputs.add(output);
+
+
+                }
+
+                /*ResultSetFormatter.outputAsJSON(outputStream, results);
+
+
+                JSONObject json = new JSONObject(outputStream.toString());
+                return json;*/
+                return outputs;
+
+            } finally {
+                qexec.close();
+            }
+
+
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+        return outputs;
+
+
+
+    }
+    @GET
+    @Path("/getAll/{name}/")
     @Produces(MediaType.APPLICATION_JSON)
     public ArrayList<Output> getAll(@PathParam("name") String brideName) {
         ArrayList<Output> outputs = new ArrayList<Output>();
