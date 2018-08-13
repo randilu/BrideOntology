@@ -1,0 +1,170 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+
+  <br>
+  <h5>Select one or more</h5>
+  <hr>
+  <div class="row">
+    <div style="text-align: center;" class="col-md-4 col-lg-4 col-sm-4">
+
+      <div class="dropdown">
+        <button style="width: 70%" class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Select Caste
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" *ngFor="let caste of castes" (click)="setCaste(caste)">{{caste}}</a>
+        </div>
+      </div>
+      {{selectedCast}}
+    </div>
+    <div style="text-align: center;" class="col-md-4 col-lg-4 col-sm-4">
+      <div class="dropdown">
+        <button style="width: 70%" class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Select Religion
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" *ngFor="let religion of religions" (click)="setReligion(religion)">{{religion}}</a>
+        </div>
+      </div>
+      {{selectedReligion}}
+    </div>
+    <div style="text-align: center;" class="col-md-4 col-lg-4 col-sm-4">
+      <div class="dropdown">
+        <button style="width: 70%" class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Select Race
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" *ngFor="let race of races" (click)="setRace(race)">{{race}}</a>
+        </div>
+      </div>
+      {{selectedRace}}
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div style="text-align: center;" class="col-md-12 col-lg-12 col-sm-12">
+      <button style="width: 100%" type="button" class="btn btn-success" (click)="onClickGetCombination()">Search Brides</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row" *ngIf="gotResults&&!recommendationsOn">
+    <div style="text-align: center;" class="col-md-12 col-lg-12 col-sm-12">
+      <button style="width: 100%" type="button" class="btn btn-primary" (click)="tryRecommendationClicked()">Try Recommendation(by Reasoner)</button>
+    </div>
+
+    <div style="text-align: center;" class="col-md-12 col-lg-12 col-sm-12">
+      <br>
+      <h2 style="text-align: center" *ngIf="!individulaSelected">There are brides who are matching to your search</h2>
+    </div>
+    <br>
+    <div class="list-group col-md-12 col-lg-12 col-sm-12" *ngIf="!individulaSelected">
+      <a href="#" style="width: 100%" class="list-group-item" *ngFor="let bride of resultsGot"
+         (click)="brideSelected(bride.subject)">
+        <h4 class="list-group-item-heading">{{bride.subject}}</h4>
+        <p class="list-group-item-text">Click for more info
+
+      </a>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12" *ngIf="individulaSelected">
+     <!-- {{selectedBrideInfo | json}}
+      -->
+      <div class="row">
+        <div style="text-align: center;" class="col-md-4 col-lg-4 col-sm-4">
+          <img style="max-height: 200px;max-width: 200px" src={{bride.url}}>
+        </div>
+        <div class="col-md-8 col-lg-8 col-sm-8">
+          <div class="row">
+          <div class="col-md-6 col-lg-6 col-sm-6">
+            <h4><small>Name </small></h4>
+            <h4><small>Age  </small></h4>
+            <h4><small>Height  </small></h4>
+            <h4><small>Skin Tone  </small></h4>
+            <h4><small>Lives in  </small></h4>
+            <h4><small>Educational Level  </small></h4>
+            <h4><small>Occupation  </small></h4>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-6">
+            <h4>{{bride.label}}</h4>
+            <h4><small>{{bride.age || '-no info-'}}</small></h4>
+            <h4><small>{{bride.height || '-no info-'}}cm</small></h4>
+            <h4><small>{{bride.hasSkinTone || '-no info-'}}</small></h4>
+            <h4><small>{{bride.livesIn || '-no info-'}}</small></h4>
+            <h4>{{bride.hasDegree || '-no info-'}}</h4>
+            <h4>{{bride.hasOccupation || '-no info-'}}</h4>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <br><br>
+        <p>{{bride.label}} is a bride from {{bride.livesIn || '-no info-'}}. She has completed her {{bride.hasDegree || '-no info-'}} and currently working
+        as a {{bride.hasOccupation || '-no info-'}}. She owns {{bride.hasSkinTone || '-no info-'}} with {{bride.height || '-no info-'}}cm height and looking for a handsome kind person to marry.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="recommendationsOn">
+    <div class="col-md-6 col-lg-6 col-sm-6">
+      <div class="dropdown">
+        <button style="width: 100%" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Select Category
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" *ngFor="let category of categories" (click)="selectCategory(category)">{{category}}</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6">
+      <h2>{{selectedCategory}}</h2>
+    </div>
+    <div *ngIf="categorySelected">
+      <div class="col-md-12 col-lg-12 col-sm-12" *ngFor="let bride of bridesFinal">
+        <!-- {{selectedBrideInfo | json}}
+         -->
+        <div class="row">
+          <div style="text-align: center;" class="col-md-4 col-lg-4 col-sm-4">
+            <img style="max-height: 200px;max-width: 200px" src={{bride.url}}>
+          </div>
+          <div class="col-md-8 col-lg-8 col-sm-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 col-sm-6">
+                <h4><small>Name </small></h4>
+                <h4><small>Age  </small></h4>
+                <h4><small>Height  </small></h4>
+                <h4><small>Skin Tone  </small></h4>
+                <h4><small>Lives in  </small></h4>
+                <h4><small>Educational Level  </small></h4>
+                <h4><small>Occupation  </small></h4>
+              </div>
+              <div class="col-md-6 col-lg-6 col-sm-6">
+                <h4>{{bride.label}}</h4>
+                <h4><small>{{bride.age || '-no info-'}}</small></h4>
+                <h4><small>{{bride.height || '-no info-'}}cm</small></h4>
+                <h4><small>{{bride.hasSkinTone || '-no info-'}}</small></h4>
+                <h4><small>{{bride.livesIn || '-no info-'}}</small></h4>
+                <h4>{{bride.hasDegree || '-no info-'}}</h4>
+                <h4>{{bride.hasOccupation || '-no info-'}}</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <br><br>
+          <p>{{bride.label}} is a bride from {{bride.livesIn || '-no info-'}}. She has completed her {{bride.hasDegree || '-no info-'}} and currently working
+            as a {{bride.hasOccupation || '-no info-'}}. She owns {{bride.hasSkinTone || '-no info-'}} with {{bride.height || '-no info-'}}cm height and looking for a handsome kind person to marry.</p>
+        </div>
+        <hr>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<ng4-loading-spinner [threshold]="10" [timeout]="400000"  [loadingText]="'this might take a while ...\nfinding inferred knowledge with reasoner'" [zIndex]="9999"></ng4-loading-spinner>
+

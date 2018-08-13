@@ -20,7 +20,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="646">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
@@ -29,14 +29,10 @@
       <file leaf-file-name="JSONService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bride/rest/JSONService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="193" column="44" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
+            <state relative-caret-position="1907">
+              <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6183#6191#0" expanded="true" />
-                <element signature="e#5692#5700#0" expanded="true" />
-                <element signature="e#8750#8758#0" expanded="true" />
-                <element signature="e#12948#12956#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +41,7 @@
       <file leaf-file-name="bride_08.owl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/bride_08.owl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="25959">
               <caret line="1527" selection-start-line="1527" selection-end-line="1528" />
             </state>
           </provider>
@@ -65,12 +61,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,8 +214,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,16 +470,16 @@
       <workItem from="1533983318829" duration="4106000" />
       <workItem from="1533988854821" duration="1922000" />
       <workItem from="1533991882374" duration="27574000" />
-      <workItem from="1534057500714" duration="51772000" />
+      <workItem from="1534057500714" duration="53171000" />
+      <workItem from="1534121872531" duration="615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85374000" />
+    <option name="totallyTimeSpent" value="87388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.1420205" side_tool="true" weight="0.3227345" />
@@ -510,9 +500,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8579795" visible="true" weight="0.29570746" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8579795" weight="0.9109698" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22693998" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22693998" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -527,9 +517,8 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3290938" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8579795" visible="true" weight="0.17011128" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8579795" visible="true" weight="0.17011128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -542,18 +531,19 @@
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.45534408" weight="0.4228935" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22693998" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22693998" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
     </layout-to-restore>
   </component>
@@ -571,6 +561,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_08.owl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25959">
+          <caret line="1527" selection-start-line="1527" selection-end-line="1528" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bride/rest/Output.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bride/rest/JSONService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="226" column="20" selection-start-line="226" selection-start-column="20" selection-end-line="226" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
         </state>
@@ -583,20 +611,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_01.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14144">
-          <caret line="832" column="14" selection-start-line="832" selection-start-column="14" selection-end-line="832" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_03.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23018">
-          <caret line="1354" column="108" lean-forward="true" selection-start-line="1354" selection-start-column="95" selection-end-line="1354" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_01.owl" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_03.owl" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bride/rest/Output.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -617,10 +633,6 @@
           <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6183#6191#0" expanded="true" />
-            <element signature="e#5692#5700#0" expanded="true" />
-            <element signature="e#8750#8758#0" expanded="true" />
-            <element signature="e#12948#12956#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -652,10 +664,6 @@
           <caret line="70" column="86" lean-forward="true" selection-start-line="70" selection-start-column="86" selection-end-line="70" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6183#6191#0" expanded="true" />
-            <element signature="e#5692#5700#0" expanded="true" />
-            <element signature="e#8750#8758#0" expanded="true" />
-            <element signature="e#12948#12956#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,10 +695,6 @@
           <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6183#6191#0" expanded="true" />
-            <element signature="e#5692#5700#0" expanded="true" />
-            <element signature="e#8750#8758#0" expanded="true" />
-            <element signature="e#12948#12956#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,46 +714,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_01.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14144">
-          <caret line="832" column="14" selection-start-line="832" selection-start-column="14" selection-end-line="832" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pizza.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="615" column="84" selection-start-line="615" selection-start-column="83" selection-end-line="615" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/owlDemoSchema.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="65" column="64" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/owlDemoData.rdf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_01.owl" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/pizza.owl" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/owlDemoSchema.owl" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/owlDemoData.rdf" />
     <entry file="file://$USER_HOME$/Desktop/untitled-ontology-16">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-252" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_03.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="368" column="90" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_03.owl" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.8.0/jena-arq-3.8.0.jar!/org/apache/jena/query/ResultSetRewindable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -771,23 +745,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_05.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="2069" column="17" selection-start-line="2069" selection-start-column="9" selection-end-line="2069" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bride_05.owl" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bride/rest/Output.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,28 +762,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="646">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/bride_08.owl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="25959">
           <caret line="1527" selection-start-line="1527" selection-end-line="1528" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bride/rest/JSONService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="193" column="44" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
+        <state relative-caret-position="1907">
+          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6183#6191#0" expanded="true" />
-            <element signature="e#5692#5700#0" expanded="true" />
-            <element signature="e#8750#8758#0" expanded="true" />
-            <element signature="e#12948#12956#0" expanded="true" />
           </folding>
         </state>
       </provider>
